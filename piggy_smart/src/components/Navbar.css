@@ -46,7 +46,7 @@
 }
 
 .ps-navbar__parent-toggle {
-  background: ${"var(--ps-navbar-toggle-bg, #FFD54F)"};
+  background: var(--ps-navbar-toggle-bg, #FFD54F);
   border: none;
   border-radius: 12px;
   padding: 8px 16px;
