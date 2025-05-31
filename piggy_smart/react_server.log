@@ -18,3 +18,27 @@ Note that the development build is not optimized.
 To create a production build, use npm run build.
 
 webpack compiled successfully
+Compiling...
+Failed to compile.
+
+Syntax error: /home/kavia/workspace/code-generation/piggysmart-25445-29a9ecf7/piggy_smart/src/components/Navbar.css Unknown word (49:17)
+  47 | 
+  48 | .ps-navbar__parent-toggle {
+> 49 |   background: ${"var(--ps-navbar-toggle-bg, #FFD54F)"};
+     |                 ^
+  50 |   border: none;
+  51 |   border-radius: 12px;
+ERROR in ./src/components/Navbar.css (./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js!./src/components/Navbar.css)
+Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):
+SyntaxError
+
+(49:17) /home/kavia/workspace/code-generation/piggysmart-25445-29a9ecf7/piggy_smart/src/components/Navbar.css Unknown word
+
+  47 | 
+  48 | .ps-navbar__parent-toggle {
+> 49 |   background: ${"var(--ps-navbar-toggle-bg, #FFD54F)"};
+     |                 ^
+  50 |   border: none;
+  51 |   border-radius: 12px;
+
+webpack compiled with 1 error
