@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
-import Dashboard from './features/dashboard/Dashboard';
-import './features/dashboard/Dashboard.css';
+import SavingsGoals from './features/savingsGoals/SavingsGoals';
+import './features/savingsGoals/SavingsGoals.css';
 // import Sidebar from './components/Sidebar'; // Enable if using sidebar navigation
 
 /**
@@ -18,8 +18,8 @@ function App() {
       {/* Main Content Layout */}
       <main className="ps-main-content">
         <div className="ps-center-content">
-          {/* Animated PiggySmart Dashboard */}
-          <Dashboard initialSavings={0} savingsGoal={100} />
+          {/* Savings Goals CRUD UI */}
+          <SavingsGoals />
         </div>
       </main>
     </div>
