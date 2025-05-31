@@ -1,0 +1,123 @@
+.ps-mascot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+.ps-mascot-svg {
+  filter: drop-shadow(0 7px 32px #FFD54F33) drop-shadow(0 2px 4px #81C78430);
+  background: none;
+  border-radius: 32px;
+  transition: filter 0.22s, transform 0.33s;
+  margin-bottom: 7px;
+}
+.ps-mascot--animate {
+  animation: bouncePiggy 1.3s cubic-bezier(.36,0,.1,1.2) 1;
+}
+@keyframes bouncePiggy {
+  0% { transform: scale(0.95);}
+  30%{ transform: scale(1.18);}
+  65%{ transform: scale(0.98);}
+  100%{ transform: scale(1);}
+}
+.ps-mascot__subtitle {
+  color: #FFD54F;
+  font-size: 1.12em;
+  margin-top: 3px;
+  text-shadow: 0 1px 5px #FF8A6511;
+  font-weight: 600;
+}
+.ps-mascot-stage-legend .ps-mascot__subtitle {
+  color: #FFD700;
+  font-size: 1.22em;
+  text-shadow: 0 1px 8px #FFD54F60;
+}
+
+.ps-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  align-items: flex-start;
+  margin-bottom: 18px;
+  min-height: 48px;
+}
+.ps-badges--big {
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.ps-badge {
+  background: linear-gradient(96deg, #FFD54Faa 70%, #81C78488 100%);
+  border-radius: 17px;
+  box-shadow: 0 2px 8px #FFD54F42;
+  padding: 8px 14px;
+  min-width: 60px;
+  min-height: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border: 2.2px solid #FF8A65;
+  font-size: 2.2em;
+  transition: box-shadow 0.18s;
+}
+.ps-badge__icon {
+  filter: drop-shadow(0 2px 6px #FFD54F44);
+  font-size: 2.1em;
+  margin-bottom: 2px;
+}
+.ps-badge__label {
+  font-size: 1em;
+  text-align: center;
+  margin-top: 3px;
+  font-weight: 600;
+  color: #FF8A65;
+}
+.ps-badge__desc {
+  font-size: 0.98em;
+  font-weight: 400;
+  color: #4FC3F7;
+  margin: 2px 0 2px 0;
+}
+.ps-badge__date {
+  color: #81C784;
+  font-size: 0.95em;
+  display: block;
+}
+.ps-badge:after {
+  content: "";
+  display: none;
+}
+
+.ps-badges__none {
+  color: #FFD54F; opacity: 0.85; font-size: 1.12em;
+}
+
+.ps-celebration {
+  pointer-events: none;
+  position: fixed;
+  z-index: 2200;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  overflow: visible;
+  /* no background */
+}
+.ps-confetti-emoji {
+  position: absolute;
+  top: 0;
+  user-select: none;
+  opacity: 0.90;
+  pointer-events: none;
+  animation: dropConfetti 1.5s cubic-bezier(.6,0,.5,1.05) forwards;
+}
+@keyframes dropConfetti {
+  0% { transform: translateY(-23vh) scale(1.1) rotate(-11deg);}
+  42% { opacity: 1;}
+  70% { transform: translateY(65vh) scale(1.23) rotate(12deg);}
+  80% { opacity: 0.95;}
+  100%{ transform: translateY(101vh) scale(1) rotate(24deg); opacity: 0;}
+}
