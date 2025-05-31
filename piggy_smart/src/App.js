@@ -5,6 +5,7 @@ import SavingsGoals from './features/savingsGoals/SavingsGoals';
 import './features/savingsGoals/SavingsGoals.css';
 import Quiz from './features/quizzes/Quiz';
 import './features/quizzes/Quiz.css';
+import Rewards from './features/rewards/Rewards';
 // import Sidebar from './components/Sidebar'; // Enable if using sidebar navigation
 
 /**
@@ -30,6 +31,7 @@ function App() {
         <div className="ps-center-content">
           {mainView === "goals" && <SavingsGoals />}
           {mainView === "quiz" && <Quiz />}
+          {mainView === "rewards" && <Rewards />}
           {/* (Other views: Rewards, Dashboard, etc. to be integrated) */}
         </div>
       </main>
