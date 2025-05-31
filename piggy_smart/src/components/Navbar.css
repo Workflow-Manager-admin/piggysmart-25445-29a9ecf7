@@ -1,0 +1,62 @@
+.ps-navbar {
+  width: 100%;
+  background: var(--ps-navbar-bg, #23232b);
+  color: var(--ps-navbar-color, #fff);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  height: 58px;
+  box-sizing: border-box;
+  box-shadow: 0 1px 5px 0 rgba(10,10,10,0.07);
+}
+
+.ps-navbar__logo {
+  font-size: 1.45rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  user-select: none;
+}
+
+.ps-navbar__links {
+  display: flex;
+  gap: 18px;
+}
+
+.ps-navbar__icon-btn {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  color: inherit;
+  padding: 7px 12px;
+  border-radius: 12px;
+  transition: background 0.2s;
+  cursor: pointer;
+  outline: none;
+}
+.ps-navbar__icon-btn:active,
+.ps-navbar__icon-btn:focus {
+  background: #31313b;
+}
+.ps-navbar__icon-btn:hover {
+  background: #2D2D38;
+}
+
+.ps-navbar__parent-toggle {
+  background: ${"var(--ps-navbar-toggle-bg, #FFD54F)"};
+  border: none;
+  border-radius: 12px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-left: 16px;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 1px 6px 0 rgba(0,0,0,0.09);
+}
+.ps-navbar__parent-toggle:hover,
+.ps-navbar__parent-toggle:focus {
+  box-shadow: 0 2px 8px 0 #FFD54F3a;
+}
