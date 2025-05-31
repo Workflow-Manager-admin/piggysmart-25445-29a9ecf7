@@ -4,6 +4,45 @@
   --text-color: #ffffff;
   --text-secondary: rgba(255, 255, 255, 0.7);
   --border-color: rgba(255, 255, 255, 0.1);
+
+  /* PiggySmart Playful Palette */
+  --piggy-sky-blue: #4FC3F7;
+  --piggy-sunny-yellow: #FFD54F;
+  --piggy-soft-coral: #FF8A65;
+  --piggy-mint-green: #81C784;
+  --piggy-navbar-bg: #23232b;
+  --piggy-dark-bg: #13131a;
+}
+
+.piggy-dark-theme {
+  background: var(--piggy-dark-bg, #13131a);
+  min-height: 100vh;
+  color: #fff;
+}
+
+/* Main Content Area Scaffold */
+.ps-main-content {
+  margin-top: 68px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: calc(100vh - 68px);
+}
+.ps-center-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 60vh;
+  width: 100%;
+  padding-top: 48px;
+}
+
+/* PiggySmart Navbar & Button touch-friendly adjustment */
+.ps-navbar .ps-navbar__icon-btn,
+.ps-navbar__parent-toggle,
+.ps-sidebar__icon-btn {
+  touch-action: manipulation;
 }
 
 body {
